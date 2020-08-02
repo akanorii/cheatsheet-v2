@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>"CSS Cheatsheet"</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+       <h1>CSS Cheatsheet</h1>
+      </header>  
+       <h2>Specificity</h2>
+      <div>
+        <h4>Specificity refers to the order in which the browser decides which CSS styles will be displayed. The table below ranks them from the lowest to highest degrees of specificity.</h4>
+          </div>  
+          <table class="center">
+            <th class="header" colspan="4">Specificity</th>
+              <tr>
+                <th class="header-row">Name</th>
+                <th class="header-row">Description</th>
+                <th class="header-row-2">Style Rule Example HTML</th>
+            <th class="header-row-2">Style Rule Example CSS</th>
+            </tr>
+              <tr>
+                <td>Tag</td>
+                <td><strong>Tags</strong> are the 
+                lowest priority in terms of specificity</td>
+                <td>&lt;p&gt</td>
+                <td>p{...}</td>
+              </tr>
+              <tr>
+                <td>Class</td>
+                <td>Using the <strong>Class</strong> attribute 
+                for styling is best practice.</td>
+                <td>&lt;h1 class="brand"&gt;Chevrolet&lt;/h1&gt</td>
+                <td>.brand{...}</td>
+              </tr>
+              <tr>
+                <td>ID</td>
+                <td>It is best to use <strong>ID</strong> for styling on a specific case, as it can not be overridden easily.</td>
+                <td>&lt;h1 ID="brand"&gt;Chevrolet&lt;/h1&gt</td>
+                <td>#brand{...}</td>
+                </tr>
+              <tr>
+                <td>!important</td>
+                <td>Using <strong>!important </strong> as your style target is generally discouraged, as it will override all other style rules.</td>
+                <td>N/A</td>
+                <td>p{color: blue !important}</td>
+              </tr>
+          </table>
+
+       <h2>Style Examples</h2>
+      <div>
+        <h4>CSS is the language used by developers to style the HTML content on your page. The table below gives just a few examples of the many types of styles possible.</h4>
+          </div>  
+          <table class="center">
+            <th class="header" colspan="4">Style Examples</th>
+              <tr>
+                <th class="header-row">Name</th>
+                <th class="header-row">Description</th>
+                <th class="header-row-2">Style Rule Example HTML</th>
+            <th class="header-row-2">Style Rule Example CSS</th>
+            </tr>
+              <tr>
+                <td>Table Border Styling</td>
+                <td>When styling table borders, the default will box each element on it's own. By using <strong>border-collapse</strong> we can turn the borders into the recognizeable grid shape we're used to seeing on tables.</td>
+                <td>&lt;table&gt</td>
+                <td>table{border-collapse: collapse;}</td>
+              </tr>
+              <tr>
+                <td>Centering Tables on the Page</td>
+                <td>Using <strong>text-align: center</strong> will center the text within the table. By adjusting our margins, we can change the position of the table itself on the page.</td>
+                <td>&lt;table class= "center"&gt</td>
+                <td>.center{margin-left: auto; margin-right: auto;}</td>
+              </tr>
+              <tr>
+                <td>Highlighting Table Rows</td>
+                <td>By utilizing the <strong>hover</strong> attribute we can highlight a specific row in our table by hovering over it with the mouse</td>
+                <td>&lt;table class="highlight"&gt;</td>
+                <td>.highlight tr:hover td{background-color: yellow;}</td>
+                </tr>
+          </table>
+
+          <footer class="footer">
+            <p>"Build Your Own Cheat Sheet"<br>CodeCademy Course<br>Angela Nooraga<br>
+August 2020</p>
+          </footer>
+    </body>
+</html>
